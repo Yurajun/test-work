@@ -1,0 +1,217 @@
+.header
+	position relative
+	z-index 5
+	display flex
+	background-color $header-phone
+	justify-content space-between
+
+.content
+	display block
+
+	&__item
+		position relative
+		overflow hidden
+
+.link-box
+	position relative
+	top 0
+	right 0
+	left 0
+	bottom 0
+	font-size 0
+	text-decoration none
+	background-repeat no-repeat
+	background-position center center
+	background-size cover
+	transition all .2s
+
+	&
+		display flex
+		align-items center
+		justify-content center
+		size(100%)
+
+	&_owl
+		retinaBackground(owl, jpg)
+	&_frog
+		retinaBackground(frog, jpg)
+	&_owl2
+		retinaBackground(owl2, jpg)
+	&_ship
+		retinaBackground(ship, jpg)
+	&_king
+		retinaBackground(king, jpg)
+	&_girl
+		background-position center 44%
+		retinaBackground(girl, jpg)
+	&_girl2
+		retinaBackground(girl2, jpg)
+	&_boyes
+		retinaBackground(boyes, jpg)
+	&_boy
+		retinaBackground(boy, jpg)
+
+	&__content
+		background-repeat no-repeat
+		background-position center center
+		background-size cover
+		transition all .2s
+
+		&_owl
+			retinaBackground(owl-text, png)
+		&_frog
+			retinaBackground(frog-text, png)
+		&_owl2
+			retinaBackground(owl2-text, png)
+		&_ship
+			retinaBackground(ship-text, png)
+		&_king
+			retinaBackground(king-text, png)
+		&_girl
+			retinaBackground(girl-text, png)
+		&_girl2
+			retinaBackground(girl2-text, png)
+		&_boyes
+			retinaBackground(fox-text, png)
+		&_boy
+			retinaBackground(baby-text, png)
+
+
+
+@media only screen and (max-width: 959px)
+	.wrapper-page
+		display block
+
+	.header
+		flex-direction column
+		justify-content space-between
+
+	.content
+
+		&__item
+			height 46.97916666666667vw
+
+	.link-box
+
+		&__content
+
+			&_owl
+				size(42.15613382899628vw, 14.944237918215614vw)
+			&_frog
+				size(46.17100371747212vw, 13.82899628252788vw)
+			&_owl2
+				size(38.81040892193309vw, 13.60594795539033vw)
+			&_ship
+				size(41.48698884758364vw, 14.49814126394052vw)
+			&_king
+				size(40.14869888475836vw, 11.82156133828996vw)
+			&_girl
+				size(50.63197026022305vw, 19.182156133829vw)
+			&_girl2
+				size(66.91449814126394vw, 19.182156133829vw)
+			&_boyes
+				size(26.76579925650558vw, 11.82156133828996vw)
+			&_boy
+				size(33.68029739776952vw, 24.53531598513011vw)
+
+		&:active
+			transform scale(1.1)
+			.link-box__content
+				transform scale(.8)
+
+
+@media only screen and (min-width: 960px)
+	.wrapper-page
+		position absolute
+		top 0
+		right 0
+		left 0
+		bottom 0
+		display grid
+		min-height 100vh
+		grid-template-rows 5.278810408921933vw 1fr
+
+
+	.header
+		padding 0 2.527881040892193vw 0 2.304832713754647vw
+		flex-direction row
+		min-width 100vw
+		height 5.278810408921933vw
+
+	.content
+		position absolute
+		top 0
+		right 0
+		left 0
+		bottom 0
+		padding-top 5.278810408921933vw
+		display grid
+		grid-template-columns 1fr 1fr 1fr
+		grid-template-rows 1fr 1fr 1fr
+
+		&__item
+
+			&_a
+				grid-row 1
+				grid-column 1
+
+			&_b
+				grid-row 1
+				grid-column 2
+
+			&_c
+				grid-row 1
+				grid-column 3
+
+			&_d
+				grid-row 2
+				grid-column 1
+
+			&_e
+				grid-row 2
+				grid-column 2
+
+			&_f
+				grid-row 2
+				grid-column 3
+
+			&_j
+				grid-row 3
+				grid-column 1
+
+			&_h
+				grid-row 3
+				grid-column 2
+
+			&_i
+				grid-row 3
+				grid-column 3
+
+
+	.link-box
+
+		&__content
+
+			&_owl
+				size(14.05204460966543vw, 4.981412639405204vw)
+			&_frog
+				size(15.39033457249071vw, 4.609665427509294vw)
+			&_owl2
+				size(12.9368029739777vw, 4.535315985130112vw)
+			&_ship
+				size(13.82899628252788vw, 4.83271375464684vw)
+			&_king
+				size(13.38289962825279vw, 3.940520446096654vw)
+			&_girl
+				size(16.87732342007435vw, 6.394052044609665vw)
+			&_girl2
+				size(22.30483271375465vw, 6.394052044609665vw)
+			&_boyes
+				size(8.921933085501859vw, 3.940520446096654vw)
+			&_boy
+				size(11.22676579925651vw, 8.178438661710037vw)
+
+		&:hover
+			transform scale(1.1)
+			.link-box__content
+				transform scale(.8)

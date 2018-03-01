@@ -1,0 +1,34 @@
+.menu
+	display flex
+	flex-direction row
+	align-items center
+
+	&__title-menu
+		display none
+		font-size 0
+		text-indent -1000em
+
+	&__link
+		text-decoration none
+		color $menu-link
+
+@media only screen and (max-width: 959px)
+	.menu
+		height 15.8364312267658vw
+		justify-content space-around
+
+		&__link
+			font 4.684014869888476vw PragmaticaCondC
+			letter-spacing .2230483271375465vw
+
+
+@media only screen and (min-width: 960px)
+	.menu
+		width 23.64312267657993vw
+		height 100%
+		justify-content space-between
+
+		&__link
+			font 1.561338289962825vw PragmaticaCondC
+			letter-spacing .0743494423791822vw
+

@@ -1,0 +1,15 @@
+mixin menu()
+	+b.NAV.menu&attributes(attributes)
+		block
+
+		+e('h2').title-menu Главное меню
+
+		+e('a')(href="#").link
+			| Телеканалы
+
+		+e('a')(href="#").link
+			| Маркетинг
+
+		+e('a')(href="#").link
+			| Котакты
+

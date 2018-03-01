@@ -1,0 +1,48 @@
+.title
+	display flex
+	font-size 0
+	text-decoration none
+	align-items center
+
+	&__logo
+		background-repeat no-repeat
+		background-position center center
+		background-size cover
+		retinaBackground(logo, png)
+
+	&__wrapp-text
+		display flex
+		height 100%
+		align-items center
+
+	&__logo-text
+		text-align center
+		color $header-logo-text
+
+@media only screen and (max-width: 959px)
+	.title
+		height 15.8364312267658vw
+
+		&__logo
+			margin-right 5.799256505576208vw
+			margin-left 5.7vw
+			size(19.85130111524164vw, 8.252788104089219vw)
+
+		&__logo-text
+			width 62vw
+			font 4.014869888475836vw PragmaticaCondC
+			text-align center
+			letter-spacing .0892193308550186vw
+
+@media only screen and (min-width: 960px)
+
+	.title
+		height 100%
+
+		&__logo
+			margin-right 1.933085501858736vw
+			size(6.617100371747212vw, 2.75092936802974vw)
+
+		&__logo-text
+			font 1.338289962825279vw PragmaticaCondC
+			letter-spacing .0297397769516729vw

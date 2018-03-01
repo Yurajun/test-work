@@ -1,6 +1,49 @@
 extends /blocks/layout-default/layout-default
+include ../blocks/title/title
+include ../blocks/menu/menu
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'My test work';
 
 block content
+	+b('div').wrapper-page
+		+b('div').header
+			+title
+			+menu
+
+		+b('div').content
+			+e('div').item_a
+				+b('a')(href="#").link-box._owl
+					+e('div').content_owl
+
+			+e('div').item_b
+				+b('a')(href="#").link-box._frog
+					+e('div').content_frog
+
+			+e('div').item_c
+				+b('a')(href="#").link-box._owl2
+					+e('div').content_owl2
+
+			+e('div').item_d
+				+b('a')(href="#").link-box._ship
+					+e('div').content_ship
+
+			+e('div').item_e
+				+b('a')(href="#").link-box._king
+					+e('div').content_king
+
+			+e('div').item_f
+				+b('a')(href="#").link-box._girl
+					+e('div').content_girl
+
+			+e('div').item_j
+				+b('a')(href="#").link-box._girl2
+					+e('div').content_girl2
+
+			+e('div').item_h
+				+b('a')(href="#").link-box._boyes
+					+e('div').content_boyes
+
+			+e('div').item_i
+				+b('a')(href="#").link-box._boy
+					+e('div').content_boy
